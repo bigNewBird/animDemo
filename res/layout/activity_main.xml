@@ -1,26 +1,17 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:focusableInTouchMode="true"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.animationdemo.MainActivity" >
 
-    <TextView
-        style="@style/StyleTextView"
-        android:text="默认样式" />
+    <com.sdf.jazzylistviewdemo.widget.jazzylistview.JazzyListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.sdf.jazzylistviewdemo.widget.jazzylistview.JazzyListView>
 
-    <EditText
-        android:id="@+id/et_search"
-        style="@style/StyleEditText" />
-
-    <TextView
-        style="@style/StyleTextView"
-        android:text="居中样式" />
-
-    <com.example.animdemo.IconCenterEditText
-        android:id="@+id/icet_search"
-        style="@style/StyleEditText" />
-
-</LinearLayout>
+</RelativeLayout>
